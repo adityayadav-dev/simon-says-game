@@ -1,0 +1,105 @@
+body {
+    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-weight: 900;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    height: 140px;
+    width: 140px;
+    border: 5px solid #fff;
+    border-radius: 15%;
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    display: flex;
+}
+
+.red {
+    background-color: #63aac0;
+}
+.pink {
+    background-color: #d95980;
+}
+.yellow {
+    background-color: #f99b45;
+}
+.blue {
+    background-color: #819ff9;
+}
+
+.flash {
+    filter: brightness(200%);
+    transform: scale(1.05);
+}
+
+.userFlash {
+    filter: brightness(120%);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restartBtn:hover {
+    background-color: #1a5dd8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+        margin: 0.5rem;
+    }
+}

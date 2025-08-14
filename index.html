@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="level">Simon Says Game</h1>
+    <h3 class="start">Press any key or tap here to start</h3>
+
+    <div class="btn-cont">
+        <div class="line">
+            <div class="btn pink" id="pink"></div>
+            <div class="btn red" id="red"></div>
+        </div>
+        <div class="line">
+            <div class="btn yellow" id="yellow"></div>
+            <div class="btn blue" id="blue"></div>
+        </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal" id="gameOverModal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p id="finalScore"></p>
+            <button id="restartBtn">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
