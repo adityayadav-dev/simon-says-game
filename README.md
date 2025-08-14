@@ -35,5 +35,14 @@ Test your memory skills by repeating the sequence of colors and sounds as they g
 5. Make a mistake and the game is over!
 
 ---
+🌐 Live Demo
+🔗 [Play Now](https://adityayadav-dev.github.io/simon-says-game/) 
 
-## 📂 Project Structure
+---
+## 🤝 Contributing
+Feel free to fork this repository and submit pull requests to improve the game.
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License** – you’re free to use, modify, and distribute it.
