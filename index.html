@@ -6,8 +6,47 @@
     <title>Simon Says Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<!-- <body>
     <h1 class="level">Simon Says Game</h1>
+    <h3 class="start">Press any key or tap here to start</h3>
+
+    <div class="btn-cont">
+        <div class="line">
+            <div class="btn pink" id="pink"></div>
+            <div class="btn red" id="red"></div>
+        </div>
+        <div class="line">
+            <div class="btn yellow" id="yellow"></div>
+            <div class="btn blue" id="blue"></div>
+        </div>
+    </div>
+
+    <-- Game Over Modal 
+    <div class="modal" id="gameOverModal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p id="finalScore"></p>
+            <button id="restartBtn">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body> -->
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="modal" style="display:flex;">
+        <div class="modal-content">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="playerNameInput" placeholder="Your name" style="padding:10px;font-size:1rem;">
+            <button id="startGameBtn">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Leaderboard Button -->
+    <button id="leaderboardBtn" style="position:absolute;top:10px;right:10px;">🏆 Leaderboard</button>
+
+    <h1 class="level">Simon Says Game</h1>
+    <h3 id="playerNameDisplay"></h3>
     <h3 class="start">Press any key or tap here to start</h3>
 
     <div class="btn-cont">
@@ -30,6 +69,16 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Leaderboard Modal -->
+    <div class="modal" id="leaderboardModal">
+        <div class="modal-content">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboardList"></ul>
+            <button id="closeLeaderboard">Close</button>
+        </div>
+    </div>
+
+     <script src="app.js"></script>
 </body>
+
 </html>
